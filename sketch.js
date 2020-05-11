@@ -193,6 +193,11 @@ function reset(){
   
   trex.changeAnimation("running",trex_running);
   
+  if(localStorage["HighestScore"]<score){
+    localStorage["HighestScore"]=score;
+  }
+  console.log(localStorage["HighestScore"]);
+  
   score = 0;
   
 }
